@@ -15,7 +15,7 @@ body{
     display:flex;
     flex-direction: row-reverse;
     width: 100%;
-    min-height: 939px
+    height: 100vh;
 }
 
 .div1{
@@ -80,4 +80,19 @@ button{
 
 .label-check{
     text-decoration: underline;
+}
+
+@media(max-width:768px){
+    .flexbox{
+        flex-direction: column-reverse;
+        
+    }
+    .div1{
+        width:100%;
+        flex: 1;
+    }
+    .div2{
+        
+        flex: 1;
+    }
 }
